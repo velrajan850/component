@@ -1,0 +1,37 @@
+
+<mat-toolbar style="background-color:brown;" cla>
+  <mat-toolbar-row>
+    <span>MENU</span>
+    <span class="example-spacer"></span>
+   <button mat-icon-button> <mat-icon class="example-icon" aria-hidden="false" aria-label="Example heart icon">favorite</mat-icon>
+   </button>
+    <button mat-icon-button> <mat-icon class="example-icon" aria-hidden="false" aria-label="Example delete icon">delete</mat-icon>
+     </button>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+
+
+
+<mat-sidenav-container>
+  <mat-sidenav mode="side" opened>
+    <mat-nav-list style=width:200px>
+      <a mat-list-item routerLink='one' style="height=60px;"> <mat-icon> find_replace </mat-icon>dashboard</a>
+      <a mat-list-item routerLink='two'style="height=60px;" > <mat-icon> accessibility </mat-icon>student</a>
+      <a mat-list-item routerLink='staff' style="height=60px;"> <mat-icon> account_circle </mat-icon>staff details</a>
+      <a mat-list-item style="height=60px;"> <mat-icon> account_box </mat-icon>attendence</a>
+      <a mat-list-item style="height=60px;" > <mat-icon> announcement </mat-icon>feedback</a>
+      
+    </mat-nav-list>
+  </mat-sidenav >
+  <mat-sidenav-content>
+  <p style ="height:88vh"> 
+
+  <router-outlet> </router-outlet>
+  
+  </p>
+  
+</mat-sidenav-content> 
+</mat-sidenav-container>
+
+
